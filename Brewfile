@@ -21,6 +21,7 @@ brew 'lame'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
+brew 'starship'
 #brew 'stripe'
 #brew 'svn'
 brew 'trash' # Manage the Trash bin
@@ -103,6 +104,7 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
 cask 'font-cascadia'
 cask 'font-menlo-for-powerline'
 
