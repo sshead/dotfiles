@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+*.pyc
 
 # Packages #
 ############
@@ -38,3 +39,24 @@ Thumbs.db
 .idea/
 .vscode
 .vagrant/
+Desktop.ini
+.AppleDouble
+.LSOverride
+*~
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share #
+#######################################################
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Private Information #
+#######################
+.private
+.gitconfig%

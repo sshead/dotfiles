@@ -1,5 +1,16 @@
 #!/bin/sh
 
+echo "Warning: About to set up your Mac. This should only be done on a fresh machine."
+read -p 'Are you SURE want to proceed? [yes/no] ' proceed_setup
+
+if [ "$proceed_setup" == "no" ]; then
+	echo 'Aborted.'
+	exit 0
+elif [ "$proceed_setup" != "yes" ]; then
+	echo "Invalid response - aborting."
+    exit 1
+fi
+
 echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
@@ -18,31 +29,27 @@ brew bundle
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
 # Install PHP extensions with PECL
-pecl install memcached imagick
+pecl install memcached # imagick
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/spark-installer laravel/valet beyondcode/expose
+/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
-
-# Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/laravel
+# Create a base directory for our sites
+# Note: '$HOME/Sites' is the default directory for macOS user accounts but doesn't comes pre-installed
+mkdir $HOME/Dev/code
 
 # Clone Github repositories
 ./clone.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s $HOME/dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
