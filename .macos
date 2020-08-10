@@ -18,10 +18,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Stephen’s MacBook Pro"
-sudo scutil --set HostName "Stephen’s MacBook Pro"
-sudo scutil --set LocalHostName "Stephen’s MacBook Pro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Stephen’s MacBook Pro"
+sudo scutil --set ComputerName "Stephens MacBook Pro"
+sudo scutil --set HostName "Stephens MacBook Pro"
+sudo scutil --set LocalHostName "Stephens MacBook Pro"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Stephens MacBook Pro"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -186,14 +186,14 @@ sudo pmset -a autorestart 1
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
 
-# Sleep the display after 15 minutes
-sudo pmset -a displaysleep 15
+# Sleep the display after 5 minutes
+sudo pmset -a displaysleep 5
 
 # Disable machine sleep while charging
 sudo pmset -c sleep 0
 
-# Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 5
+# Set machine sleep to 10 minutes on battery
+sudo pmset -b sleep 10
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
