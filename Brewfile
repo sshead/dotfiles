@@ -24,10 +24,12 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'starship'
 #brew 'stripe'
 #brew 'svn'
-brew 'trash' # Manage the Trash bin
+brew 'macos-trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'zlib' # Needed for Memcached
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
 
 # Development
 brew 'php'

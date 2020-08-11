@@ -116,3 +116,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Load z
 . /usr/local/etc/profile.d/z.sh
+
+# Load the zsh autosuggestions module
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Load the syntax highlighting module - must be last, apparently
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
