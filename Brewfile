@@ -61,7 +61,7 @@ cask 'alfred'
 cask db-browser-for-sqlite
 #cask 'dbngin'
 #cask 'discord'
-#cask 'docker'
+cask 'docker'
 #cask 'figma'
 cask 'firefox'
 cask 'gimp'
