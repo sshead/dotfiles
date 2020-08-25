@@ -25,6 +25,11 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Set up DDEV-local and NFS
+mkcert -install
+curl -O https://raw.githubusercontent.com/drud/ddev/master/scripts/macos_ddev_nfs_setup.sh && chmod +x macos_ddev_nfs_setup.sh && ./macos_ddev_nfs_setup.sh
+ddev config global --nfs-mount-enabled
+
 # Set default MySQL root password and auth type.
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
@@ -50,3 +55,13 @@ mkdir $HOME/Dev/code
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
+
+# Caveats
+cat <<DELIM
+Caveats:
+* NFS (for DDEV / Docker) has been set up for your entire home directory.
+  If you want to limit it, choose a more limited subdirectory by running:
+    sudo vi /etc/exports
+  and then
+    sudo nfsd restart
+DELIM

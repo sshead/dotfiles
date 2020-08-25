@@ -4,6 +4,7 @@ tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'drud/ddev'
 
 # Binaries
 #brew 'awscli'
@@ -96,6 +97,9 @@ cask 'virtualbox' # Might need to allow access in Security settings
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
+
+# Docker setup (DDEV)
+brew 'ddev'
 
 # Fonts
 cask 'font-lato'
