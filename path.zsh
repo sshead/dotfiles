@@ -1,6 +1,9 @@
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 #export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
+# Python scripts
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
 # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
