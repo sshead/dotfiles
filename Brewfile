@@ -50,6 +50,7 @@ brew 'composer'
 brew 'node'
 #brew 'redis'
 brew 'sqlite'
+brew 'svn'
 brew 'yarn'
 
 # Apps
