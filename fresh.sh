@@ -43,6 +43,9 @@ pecl install memcached # imagick
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
+# Install global Node packages
+npm install -g npm-check-updates
+
 # Create a base directory for our sites
 # Note: '$HOME/Sites' is the default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/Dev/code
