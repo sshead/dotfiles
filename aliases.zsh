@@ -8,6 +8,7 @@ alias vscode='code "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 alias hg="history | grep"
+alias cat="bat"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update_system='sudo softwareupdate -i -a'
