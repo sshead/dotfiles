@@ -35,7 +35,7 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 # alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
 # alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
 
-# PHPUnit and Pest
+# PHPUnit, Pest and PHPStan / Larastan
 alias pu='phpunit'
 alias puf='phpunit --filter'
 alias puslow='phpunit --group slow'
@@ -43,6 +43,7 @@ alias punoslow='phpunit --exclude-group slow'
 alias pestf='pest --filter'
 alias pestslow='pest --group slow'
 alias pestnoslow='pest --exclude-group slow'
+alias stan='phpstan analyse'
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
