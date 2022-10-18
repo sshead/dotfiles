@@ -5,7 +5,7 @@ echo "Creating symlinks..."
 homedir=$HOME
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
+dotfiledir=${homedir}/.dotfiles
 
 # list of files/folders to symlink in ${homedir}
 files="gitignore_global mackup.cfg"
