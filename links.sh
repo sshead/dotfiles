@@ -8,7 +8,7 @@ homedir=$HOME
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="zshrc gitignore_global mackup.cfg"
+files="gitignore_global mackup.cfg"
 
 # change to the dotfiles directory
 cd ${dotfiledir}

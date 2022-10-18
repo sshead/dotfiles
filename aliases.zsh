@@ -8,7 +8,6 @@ alias vscode='code "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 alias hg="history | grep"
-alias cat="bat"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update_system='sudo softwareupdate -i -a'
@@ -20,15 +19,16 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias codedir="cd $HOME/Dev/code"
-alias codecat="cd $HOME/Dev/code/catadmin/"
-alias codepray="cd $HOME/Dev/code/pray-517/"
+alias sites="cd $HOME/Sites"
+alias dev="cd $HOME/Dev"
+alias catadmin="sites && cd catadmin/"
 
 # Laravel
 alias art="php artisan"
 alias fresh="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
 alias tinker="php artisan tinker"
+alias serve="php artisan serve"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -55,12 +55,12 @@ alias sqlstop='brew services stop mysql@5.7'
 alias sql='mysql -uroot'
 
 # Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
+# alias v="vagrant global-status"
+# alias vup="vagrant up"
+# alias vhalt="vagrant halt"
+# alias vssh="vagrant ssh"
+# alias vreload="vagrant reload"
+# alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Docker
 # alias docker-composer="docker-compose"
