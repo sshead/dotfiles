@@ -1,6 +1,6 @@
 # Taps
 tap 'homebrew/cask'
-tap 'homebrew/cask-eid'
+#tap 'homebrew/cask-eid' # cask removed from homebrew
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -119,6 +119,7 @@ cask 'zoom'
 #brew 'ddev'
 
 # Fonts
+cask 'font-inter'
 cask 'font-lato'
 cask 'font-open-sans'
 cask 'font-roboto'
@@ -128,7 +129,7 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 cask 'font-fira-code'
 cask 'font-fira-code-nerd-font'
-cask 'font-cascadia'
+cask 'font-cascadia-code-pl'
 cask 'font-menlo-for-powerline'
 
 # Mac App Store
