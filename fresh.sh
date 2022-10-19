@@ -76,7 +76,7 @@ mkdir $HOME/Dev/code
 $DOTFILES/clone.sh
 
 # Create symlinks
-./links.sh
+$DOTFILES/links.sh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos
