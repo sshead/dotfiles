@@ -125,3 +125,5 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Load the syntax highlighting module - must be last, apparently
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Configure bat styles
+export BAT_THEME=Coldark-Dark
