@@ -53,8 +53,8 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 # Install PHP extensions with PECL
 pecl install memcached # imagick redis swoole
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet laravel/envoy beyondcode/expose tightenco/takeout
+# Install global Composer packages - what base directory??
+/opt/homebrew/bin/composer global require laravel/installer laravel/valet laravel/envoy beyondcode/expose tightenco/takeout
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
@@ -70,6 +70,7 @@ mkdir $HOME/Sites/catadmin
 mkdir $HOME/Sites/prayer
 
 # Create directory for non-web code projects
+mkdir $HOME/Dev
 mkdir $HOME/Dev/code
 
 # Clone Github repositories
