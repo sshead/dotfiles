@@ -28,8 +28,9 @@ if test ! $(which brew); then
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+DOTFILES=$HOME/.dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $DOTFILES/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
@@ -77,7 +78,14 @@ mkdir $HOME/Dev/code
 $DOTFILES/clone.sh
 
 # Create symlinks
-$DOTFILES/links.sh
+ln -sf $DOTFILES/.gitignore_global $HOME/.gitignore_global
+ln -sf $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+
+# Download Git Auto-Completion
+curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > $HOME/.git-completion.bash
+
+# Set global Git ignore
+git config --global core.excludesfile $HOME/.gitignore_global
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos
