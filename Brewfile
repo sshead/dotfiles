@@ -64,6 +64,7 @@ brew 'pipenv'
 # Apps
 cask '1password'
 cask '1password-cli'
+cask 'adguard'
 #cask 'aerial'
 #cask 'alfred'
 #cask 'bartender'
