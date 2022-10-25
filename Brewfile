@@ -14,6 +14,7 @@ tap 'espanso/espanso'
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
+brew 'exiftool'
 brew 'ffmpeg'
 brew 'gh'
 brew 'git'
