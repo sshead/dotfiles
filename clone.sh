@@ -27,3 +27,7 @@ git clone git@github.com:sshead/prayer-vigil-517.git $SITES/prayer/prayer-vigil-
 
 # Personal
 git clone git@github.com:sshead/dogfood-ratings.git $SITES/dogfood-ratings
+
+echo "Parking Sites directory with Valet..."
+valet park $SITES/prayer
+valet park $SITES/catadmin
