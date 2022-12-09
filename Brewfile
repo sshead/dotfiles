@@ -126,6 +126,8 @@ cask 'zoom'
 #brew 'ddev'
 
 # Fonts
+cask 'font-gentium-plus'
+# cask 'font-gentium-book-plus'
 cask 'font-inter'
 cask 'font-lato'
 cask 'font-open-sans'
