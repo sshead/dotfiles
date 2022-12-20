@@ -25,7 +25,6 @@ git clone git@bitbucket.org:aussieinchile/catadmin.git/wiki $CATDIR/wiki
 git clone git@github.com:sshead/pray-517-vuejs.git $PRAYERDIR/pray-517-vuejs
 git clone git@github.com:sshead/pray-517-tall.git $PRAYERDIR/pray-517-tall
 git clone git@github.com:sshead/pray-517-laravel-7.git $PRAYERDIR/pray-517-laravel-7
-git clone git@github.com:sshead/prayer-vigil-517.git $PRAYERDIR/prayer-vigil-517
 
 # Personal
 git clone git@github.com:sshead/dogfood-ratings.git $SITES/dogfood-ratings
