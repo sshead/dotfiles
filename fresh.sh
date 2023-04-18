@@ -63,6 +63,9 @@ $HOME/.composer/vendor/bin/valet install
 # Install global Node packages
 npm install -g npm-check-updates
 
+# Install Rust tools
+rustup-init
+
 # Create a Sites directory
 mkdir $HOME/Sites
 
