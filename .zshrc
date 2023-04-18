@@ -129,4 +129,3 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 export BAT_THEME=Coldark-Dark
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-export HOMEBREW_GITHUB_API_TOKEN=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
