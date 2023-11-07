@@ -30,6 +30,7 @@ brew 'starship'
 #brew 'stripe'
 #brew 'svn'
 brew 'macos-trash' # Manage the Trash bin
+brew 'tailspin' # tspin log file highlighter to replace tail
 brew 'tree' # List directories in a tree structure
 brew 'z'
 brew 'zlib' # Needed for Memcached
