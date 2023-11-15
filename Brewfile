@@ -133,20 +133,21 @@ cask 'zoom'
 #brew 'ddev'
 
 # Fonts
+cask 'font-cascadia-code-pl'
+cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
 cask 'font-gentium-plus'
 # cask 'font-gentium-book-plus'
 cask 'font-inter'
 cask 'font-lato'
+cask 'font-menlo-for-powerline'
+cask 'font-monaspace'
 cask 'font-open-sans'
 cask 'font-roboto'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
-cask 'font-fira-code'
-cask 'font-fira-code-nerd-font'
-cask 'font-cascadia-code-pl'
-cask 'font-menlo-for-powerline'
 
 # Mac App Store
 #mas 'Byword', id: 420212497
