@@ -128,6 +128,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
 cask 'zoom'
+cask 'zotero'
 
 # Docker setup (DDEV)
 #brew 'ddev'
