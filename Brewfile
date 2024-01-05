@@ -39,8 +39,9 @@ brew 'zsh-syntax-highlighting'
 
 # Development
 brew 'php'
+brew 'php@8.2'
+brew 'php@8.1'
 brew 'php@8.0'
-brew 'php@7.4'
 brew 'php-code-sniffer'
 brew 'php-cs-fixer'
 brew 'phplint'
