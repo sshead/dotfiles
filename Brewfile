@@ -14,6 +14,7 @@ tap 'fwartner/tap'
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
+brew 'difftastic'
 brew 'exiftool'
 brew 'ffmpeg'
 brew 'gh'
