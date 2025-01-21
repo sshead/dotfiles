@@ -26,6 +26,7 @@ brew 'hub'
 brew 'lame'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
+brew 'pandoc'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'starship'
 #brew 'stripe'
