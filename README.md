@@ -14,7 +14,7 @@ If you're migrating from an existing Mac, you should first make sure to backup a
 - Did you remember to save all important documents from non-iCloud directories?
 - Did you save all of your work from apps which aren't synced through iCloud?
 - Did you remember to export important data from your local database?
-- Did you update [mackup](https://github.com/lra/mackup) to the latest version and run `mackup backup`?
+- Did you backup config settings from apps? For example, look at all the dotfiles and directories in $HOME to see what things you might want to backup and restor. (We used to be able to use Mackup for this, but it no longer works. Maybe search for a replacement!)
 
 ### Setting up your Mac
 
@@ -39,7 +39,7 @@ After backing up your old Mac you may now follow these install instructions to s
     ~/.dotfiles/fresh.sh
     ```
 
-5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
+5. Restore your backed up config values, for example, backed up dotfiles in $HOME.
 6. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
@@ -62,13 +62,6 @@ Check out the [`Brewfile`](./Brewfile) file and adjust the apps you want to inst
 
 Check out the [`aliases.zsh`](./aliases.zsh) file and add your own aliases. If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file. These files get loaded in because the `$ZSH_CUSTOM` setting points to the `.dotfiles` directory. You can adjust the [`.zshrc`](./.zshrc) file to your liking to tweak your Oh My Zsh setup. More info about how to customize Oh My Zsh can be found [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization).
 
-When installing these dotfiles for the first time you'll need to backup all of your settings with Mackup. Install Mackup and backup your settings with the commands below. It is currently set as a GitHub repository, so you will need to commit and push changes after you have backed up. Your settings will be synced to GitHub so you can use them to sync between computers and reinstall them when reinstalling your Mac. If you want to save your settings to a different directory or different storage, [checkout the documentation](https://github.com/lra/mackup/blob/master/doc/README.md#storage). Also make sure your `.zshrc` file is symlinked from your dotfiles repo to your home directory.
-
-```zsh
-brew install mackup
-mackup backup
-```
-
 You can tweak the shell theme, the Oh My Zsh settings and much more. Go through the files in this repo and tweak everything to your liking.
 
 Enjoy your own Dotfiles!
@@ -77,6 +70,6 @@ Enjoy your own Dotfiles!
 
 Based on the excellent repo and blog post of Dries Vints:
 
-🔗 Go to the original: https://github.com/driesvints/dotfiles
-📖 Read the blog post: https://driesvints.com/blog/getting-started-with-dotfiles
-📺 Watch the screencast on Laracasts: https://laracasts.com/series/guest-spotlight/episodes/1
+🔗 Go to the original: <https://github.com/driesvints/dotfiles>
+📖 Read the blog post: <https://driesvints.com/blog/getting-started-with-dotfiles>
+📺 Watch the screencast on Laracasts: <https://laracasts.com/series/guest-spotlight/episodes/1>

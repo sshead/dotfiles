@@ -82,7 +82,6 @@ $DOTFILES/clone.sh
 
 # Create symlinks
 ln -sf $DOTFILES/.gitignore_global $HOME/.gitignore_global
-ln -sf $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Download Git Auto-Completion
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > $HOME/.git-completion.bash
