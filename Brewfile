@@ -25,6 +25,7 @@ brew 'httpie'
 brew 'hub'
 brew 'lame'
 brew 'mas' # Mac App Store manager
+brew 'opencode'
 brew 'pandoc'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'starship'
